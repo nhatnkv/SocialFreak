@@ -82,4 +82,4 @@ production:
   <<: *default
   database: SocialFreak_production
   username: SocialFreak
-  password: <%= ENV['SOCIALFREAK_DATABASE_PASSWORD'] %>
+  password: root

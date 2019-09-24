@@ -1,5 +1,5 @@
 # We set the base image to be ruby 2.3.1
-FROM ruby:2.3.1
+FROM ruby:2.5.3
 # The author of the file
 MAINTAINER Nhatnkv <nhatnkv@gmail.com>
 # Things we will need.
@@ -12,10 +12,10 @@ imagemagick \
 --no-install-recommends && \
 rm -rf /var/lib/apt/lists/*
 # Init the root path
-RUN mkdir -p /home/ubuntu/myProject
+RUN mkdir -p /home/ubuntu/SocialFreak
 # We set it as env variable
-ENV RAILS_ROOT /home/ubuntu/myProject
-# We set /home/ubuntu/myProject to be the root of the project
+ENV RAILS_ROOT /home/ubuntu/SocialFreak
+# We set /home/ubuntu/SocialFreak to be the root of the project
 WORKDIR $RAILS_ROOT
 # The log of shoryuken will be in shared/log
 RUN mkdir -p shared/log && touch shared/log/shoryuken.log
