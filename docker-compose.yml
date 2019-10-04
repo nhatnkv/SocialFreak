@@ -10,7 +10,7 @@ services:
 
   redis:
     image: 'redis:4.0-alpine'
-    command: bin/rails server --port 3000
+    command: rails server --port 3000
     volumes:
       - 'redis:/data'
 
