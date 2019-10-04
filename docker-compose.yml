@@ -19,7 +19,7 @@ services:
       - 'postgres'
       - 'redis'
     build: .
-    command: bin/rails server --port 3000 --binding 0.0.0.0
+    command: bin/rails server --port 3000
     ports:
       - '3000:3000'
     volumes:
