@@ -14,4 +14,4 @@ COPY . .
 
 LABEL maintainer="Nhatnkv <nhatnkv@gmail.com>"
 
-CMD ["bundle", "exec", "rails", "server", "-b", "0.0.0.0"]
+CMD puma -C config/puma.rb
