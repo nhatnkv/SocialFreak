@@ -8,8 +8,10 @@ WORKDIR /app
 COPY Gemfile Gemfile.lock ./
 RUN gem install bundler && bundle install
 
+EXPOSE 3000
+
 COPY . .
 
 LABEL maintainer="Nhatnkv <nhatnkv@gmail.com>"
 
-CMD puma -C config/puma.rb
+CMD ["bundle", "exec", "rails", "server", "-b", "0.0.0.0"]
