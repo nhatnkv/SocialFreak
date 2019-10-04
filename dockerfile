@@ -1,6 +1,6 @@
 FROM ruby:2.5.3
 
-RUN apt-get update && apt-get add build-base nodejs postgresql-dev
+RUN apt-get update && apt-get install build-base nodejs postgresql-dev
 
 RUN mkdir /app
 WORKDIR /app
