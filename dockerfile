@@ -14,4 +14,4 @@ COPY . .
 
 LABEL maintainer="Nhatnkv <nhatnkv@gmail.com>"
 
-CMD bundle exec puma -C config/puma.rb -p 3000
+CMD puma -C config/puma.rb
