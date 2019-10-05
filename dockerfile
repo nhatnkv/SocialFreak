@@ -10,6 +10,7 @@ RUN gem install bundler && bundle install
 
 EXPOSE 3000
 ENV RAILS_ENV production
+ENV rails assets:precompile
 
 COPY . .
 
