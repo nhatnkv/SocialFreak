@@ -9,6 +9,7 @@ COPY Gemfile Gemfile.lock ./
 RUN gem install bundler && bundle install
 
 EXPOSE 3000
+ENV RAILS_ENV production
 
 COPY . .
 
