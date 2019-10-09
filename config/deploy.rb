@@ -1,8 +1,7 @@
 # config valid for current version and patch releases of Capistrano
 lock "~> 3.11.2"
 
-set :application, "social_freak"
-set :scm, :git
+set :application, "SocialFreak"
 set :repo_url, "git@github.com:nhatnkv/SocialFreak.git"
 
 # Default branch is :master
