@@ -84,3 +84,11 @@ production:
   host: postgres
   database: SocialFreak_production
   username: postgres
+
+staging:
+  <<: *default
+  host:     ENV['DATABASE_HOST_STAGING']
+  port:     ENV['DATABASE_PORT_STAGING']
+  database: SocialFreak_staging
+  username: ENV['DATABASE_USERNAME_STAGING']
+  password: ENV['DATABASE_PWD_STAGING']
